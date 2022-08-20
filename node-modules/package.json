@@ -1,0 +1,18 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@davidmarkclements/bear": "^3.0.0",
+    "@davidmarkclements/camel": "^5.0.1",
+    "@davidmarkclements/dragon": "2.5.2",
+    "fastify": "^2.15.3"
+  }
+}
