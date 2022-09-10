@@ -6,5 +6,4 @@ function answer () {
 # question 2
 // pipe the data to parent process stdout
 
-
-//process.stdin.pipe(data).pipe(process.stdout)
+//process.stdin.pipe(process.stdout)

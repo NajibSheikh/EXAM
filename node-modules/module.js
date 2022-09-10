@@ -29,3 +29,22 @@ console.groupEnd()
 //install npm @davidmarkclements/dragon at exat @2.5.2
 
 //install npm as a dev dependencies @davidmarkclements/unicorn 
+
+//install npm @davidmarkclements/camel latest but other dependencies not to rely on them
+//hint not production dependency
+//complementary options --save-dev and --save-optional which save the package 
+//under devDependencies and optionalDependencies, respectively.
+
+
+//require full path of dependencies in package.json 
+
+const {readFile} = require('fs').promises
+readFile('./package.json', 'utf-8')
+.then(data => JSON.parse(data))
+.then(({dependencies}) => {
+    const modules = Object.keys(dependencies)
+    modules.forEach(module => {
+        console.log(require.resolve(module))
+    })
+})
+.catch(console.error)
